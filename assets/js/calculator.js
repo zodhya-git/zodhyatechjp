@@ -14,9 +14,10 @@ thisForm.addEventListener('submit', async function (e) {
    
     const result = await response.json();
     document.querySelector(".preload").style.display = "none"
-    var saver = result[0]
-    alert(` You can save upto INR. ${parseFloat(saver).toFixed(2)} \n For more info contact Us.`)
-    document.getElementById("alert").innerHTML = `You can save upto INR.${parseFloat(saver).toFixed(2)} <br> For more info. <a href="https://zodhyatech.com/contact.html">Contact Us.</a>`
+    var saver =result[0]
+    saver=Math.ceil(saver/100)*100
+    document.getElementById("alert").innerHTML = `Current Energy Consumption INR ${saver} .\nUsing Zodhya device you can save upto INR ${saver*0.25} - ${saver*0.35} `
+    document.getElementById("alert-contact").innerHTML = `For more info.<a href="https://zodhyatech.com/contact.html">Contact Us</a>`
     thisForm.reset();
 
   } catch (error) {
