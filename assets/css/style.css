@@ -81,8 +81,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-  @media (min-width:1200px) {
-  .container {
+
+
+@media (min-width:1200px) {
+    .container {
     max-width: 1170px;
     padding: 0px 15px;
   }
@@ -3897,7 +3899,7 @@ div#mCSB_1_container{
 
 .chooseus-section{
   position: relative;
-  padding: 160px 0px;
+  padding: 50px 0px;
 }
 
 .chooseus-section .content-box .top-box{
