@@ -927,7 +927,7 @@ img {
 }
 
 .menu-area .mobile-nav-toggler {
-  position: relative;
+  position: fixed;
   float: right;
   font-size: 40px;
   line-height: 50px;
