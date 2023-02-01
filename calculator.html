@@ -108,7 +108,7 @@
                             <i class="icon-bar"></i>
                             <i class="icon-bar"></i>
                         </div>
-                        <nav  class="main-menu navbar-expand-md navbar-light" id="navbarId">
+                        <nav style="margin-left:3vw;" class="main-menu navbar-expand-md navbar-light" id="navbarId">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li class="dropdown"><a href="index.html">Home</a></li>
@@ -199,14 +199,14 @@
             <div class="row clearfix">
                 <div class="col-lg-6 col-md-12 col-sm-12 form-column">
                     <div class="form-inner">
-                        <h3>Let’s Calculate how much you can save.
+                        <h3>Find out how much you can save on your energy bills using our devices.
                         </h3>
                         <form id="calculatorForm">
                             <div class="form-group">
                                 <label>Type of HVAC</label>
                                 <select class="form-control" name="type_of_HVAC" id="type_of_HVAC" required>
                                     <option></option>
-                                    <option value="0"> AHU </option>
+                                    <option value="0">AHU/Ductable </option>
                                     <option value="1"> Cassette/Split </option>
                                     <option value="2"> Chiller </option>
                                     <option value="3"> Ductable </option>
@@ -217,65 +217,64 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Capacity of HVAC - In Tonne <small>(* Calculate the total capacity for ex - if
-                                        there are two split ac in room - 1.5tonne, 2 tonne so
-                                        total will be: 1.5 + 2 = 3.5 tonne.)</small> </label>
+                                <label>Capacity of HVAC in tonnes <small>(Calculate the total capacity. Eg: If there
+                                        are two split ACs in the room of capacities 1.5Tr & 2Tr, the overall capacity
+                                        would be 1.5 + 2 = 3.5Tr.)</small> </label>
                                 <input type="number" class="form-control" min="0" id="capacity_of_HVAC"
                                     name="capacity_of_HVAC" required step=0.01>
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1">Size of Building - In square feet</label>
+                                <label for="exampleFormControlSelect1">Size of your space in Sft </label>
                                 <input type="number" class="form-control" min="0" id="size_of_building"
                                     name="size_of_building" required>
                             </div>
 
                             <div class="form-group">
-                                <label>Weather Conditions <small>(* check which weather condition your city falls under
-                                        from the given Climate Zone image of India.)</small> </label>
-
+                                <label>Weather conditions <small>(Refer to the Climate Zone image on this page to know
+                                        which weather conditions your city falls under.)</small> </label>
                                 <select class="form-control" id="weather_conditions" name="weather_conditions" required>
                                     <option></option>
                                     <option value="1">🟥 Hot-Dry</option>
-                                    <option value="2" >🟧 Warm-Humid </option>
-                                    <option value="0" >🟨 Composite </option>
-                                    <option value="3" > 🟪 Temperate </option>
-                                    <option value="4" >🟦 Cold </option>
+                                    <option value="2">🟧 Warm-Humid </option>
+                                    <option value="0">🟨 Composite </option>
+                                    <option value="3"> 🟪 Temperate </option>
+                                    <option value="4">🟦 Cold </option>
                                 </select>
 
                             </div>
 
                             <div class="form-group">
-                                <label>Working hours </label>
+                                <label>No. of hours the HVAC will be operated in a day </label>
                                 <input type="number" class="form-control" min="1" max="24" id="working_hour"
-                                    name="working_hour" required>
+                                    name="working_hour" required required step=0.01>
                             </div>
 
                             <div class="form-group">
-                                <label> Building Type </label>
+                                <label> Type of business </label>
                                 <select class="form-control" id="building_type" name="building_type" required>
                                     <option></option>
-                                    <option value="0">Gym</option>
-                                    <option value="1">Hospital</option>
-                                    <option value="2">Hotel</option>
                                     <option value="3">Office</option>
                                     <option value="4">Retail</option>
-                                    <option value="5">School</option>
+                                    <option value="1">Health sector</option>
+                                    <option value="0">Gym/Fitness center</option>
+                                    <option value="2">Hotels</option>
+                                    <option value="5">Schools</option>
                                     <option value="6">Other</option>
                                 </select>
                             </div>
-                        <input type="submit" class="btn btn-warning btn-lg btn-block" value="Calculate"></input>
-                        <br>
-                       
-                        <div class="preload" style="height: 50px;   text-align: center; display: none;">
+                            <input type="submit" class="btn btn-warning btn-lg btn-block" value="Calculate"></input>
                             <br>
-                            <div class="emoji" style="font-size:100px">🕐</div>
-                        </div>
 
-                         <div>
-                            <h6 id="alert" style="color: green; font-weight: 600;"> </h6>
-                            <p id="alert-contact"></p>
-                         </div>
+                            <div class="preload" style="height: 50px;   text-align: center; display: none;">
+                                <br>
+                                <div class="emoji" style="font-size:100px">🕐</div>
+                            </div>
+
+                            <div>
+                                <h6 id="alert" style="color: green; font-weight: 600;"> </h6>
+                                <p id="alert-contact"></p>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -373,7 +372,8 @@
                                 <ul class="social-links clearfix">
                                     <li><a href="https://www.facebook.com/zodhya"><i class="fab fa-facebook-f"></i></a>
                                     </li>
-                                    <li><a href="https://twitter.com/ZodhyaOfficial"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://twitter.com/ZodhyaOfficial"><i class="fab fa-twitter"></i></a>
+                                    </li>
                                     <li><a href="https://www.linkedin.com/company/zodhya"><i
                                                 class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
