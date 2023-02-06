@@ -6,7 +6,9 @@ thisForm.addEventListener('submit', async function (e) {
   try {
 
     document.querySelector("#alert").style.display = "none"
+    document.querySelector("#alert-co2").style.display = "none"
     document.querySelector("#alert-contact").style.display = "none"
+
 
     document.querySelector(".preload").style.display = "block"
     init();
@@ -24,10 +26,16 @@ thisForm.addEventListener('submit', async function (e) {
     
     saver = Math.ceil(saver / 100) * 100
 
+    CUnit= saver/12
+    Carbon_emission_saved = Math.trunc(CUnit * 0.82)
+
     document.querySelector("#alert").style.display = "block"
+    document.querySelector("#alert-co2").style.display = "block"
     document.querySelector("#alert-contact").style.display = "block"
 
     document.getElementById("alert").innerHTML = `Using our “Saver” you can save upto INR ${new Intl.NumberFormat('en-IN').format(Math.trunc(saver * 0.25))} - INR ${new Intl.NumberFormat('en-IN').format(Math.trunc(saver * 0.35))} every month.`
+    document.getElementById("alert-co2").innerHTML = `This will reduce <strong>${Carbon_emission_saved}Kg CO2 </strong> emission.`
+    
     document.getElementById("alert-contact").innerHTML = `For more info.<a href="https://zodhyatech.com/contact.html">Contact Us</a>`
     // thisForm.reset();
   } catch (error) {
