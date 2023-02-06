@@ -25,8 +25,8 @@ thisForm.addEventListener('submit', async function (e) {
     var saver = result[0]
     
     saver = Math.ceil(saver / 100) * 100
-
-    CUnit= saver/12
+    console.log(saver);
+    CUnit= (saver*0.30)/12
     Carbon_emission_saved = Math.trunc(CUnit * 0.82)
 
     document.querySelector("#alert").style.display = "block"
