@@ -206,12 +206,12 @@
                                 <label>Type of HVAC</label>
                                 <select class="form-control" name="type_of_HVAC" id="type_of_HVAC" required>
                                     <option></option>
-                                    <option value="0">AHU/Ductable </option>
+                                    <option value="0">AHU</option>
                                     <option value="1"> Cassette/Split </option>
                                     <option value="2"> Chiller </option>
                                     <option value="3"> Ductable </option>
                                     <option value="4"> VRF </option>
-                                    <option value="5"> Miscellenous (Any HVAC like Ductable + VRf, chiller + AHU etc. )
+                                    <option value="5"> Miscellenous (Any Combination like Ductable & VRf, chiller & AHU etc.)
                                     </option>
                                 </select>
                             </div>
@@ -225,20 +225,20 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1">Size of your space in Sft </label>
+                                <label for="exampleFormControlSelect1">Size of your space in square feet</label>
                                 <input type="number" class="form-control" min="0" id="size_of_building"
                                     name="size_of_building" required>
                             </div>
                             
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1">No of Floor in your space </label>
+                                <label for="exampleFormControlSelect1">No of floor in your space </label>
                                 <input type="number" class="form-control" min="1" id="floor_of_building"
                                     name="floor_of_building" required>
                             </div>
 
                             <div class="form-group">
-                                <label>Weather conditions <small>(Refer to the Climate Zone image on this page to know
-                                        which weather conditions your city falls under.)</small> </label>
+                                <label>Weather conditions <small>(Refer to the Climate Zones image on this page to know
+                                        which weather conditions your city falls under)</small> </label>
                                 <select class="form-control" id="weather_conditions" name="weather_conditions" required>
                                     <option></option>
                                     <option value="1">🟥 Hot-Dry</option>
@@ -257,7 +257,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Last Month's Bill in INR </label>
+                                <label>Last month's Bill in INR (₹) </label>
                                 <input type="number" class="form-control" min="1" id="last_month_bill"
                                     name="last_month_bill" required required step=0.01>
                             </div>

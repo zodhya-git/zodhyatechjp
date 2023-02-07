@@ -36,7 +36,7 @@ thisForm.addEventListener('submit', async function (e) {
     document.getElementById("alert").innerHTML = `Using our “Saver” you can save upto INR ${new Intl.NumberFormat('en-IN').format(Math.trunc(saver * 0.25))} - INR ${new Intl.NumberFormat('en-IN').format(Math.trunc(saver * 0.35))} every month.`
     document.getElementById("alert-co2").innerHTML = `Reduce <strong>${Carbon_emission_saved}Kg CO2 </strong>emissions monthly.`
     
-    document.getElementById("alert-contact").innerHTML = `For more info.<a href="https://zodhyatech.com/contact.html">Contact Us</a>`
+    document.getElementById("alert-contact").innerHTML = `To know more <a href="mailto:contact@zodhyatech.com" style="color: #f0842c ;">Contact Us</a>`
     // thisForm.reset();
   } catch (error) {
     console.log(error);
