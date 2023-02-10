@@ -342,8 +342,8 @@
                     </p>
                 </div>
                 <ul class="footer-nav pull-right">
-                    <li><a href="contact.html">Terms of Service</a></li>
-                    <li><a href="contact.html">Privacy Policy</a></li>
+                    <li><a href="privacy.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
                 </ul>
             </div>
         </div>
@@ -369,26 +369,9 @@
     <script src="assets/js/scrollbar.js"></script>
     <script src="assets/js/tilt.jquery.js"></script>
     <script src="assets/js/jQuery.style.switcher.min.js"></script>
-
-    <!-- main-js -->
     <script src="assets/js/script.js"></script>
     <!-- <script src="./assets/animate.js"></script> -->
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            emailjs.sendForm('service_buj4qoj', 'template_kc16rla', '#contact-form')
-                .then(function (response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    document.getElementById("success").innerHTML = "We have got your message. Will contact you as soon as possible."
-                    document.getElementById('contact-form').reset();
-                }, function (error) {
-                    document.getElementById("alert").innerHTML = "Something Went Wrong !!!. Please Contact via other social Handels."
-                    console.log('FAILED...', error);
-                });
-
-        });
-
-    </script>
-</body><!-- End of .page_wrapper -->
+    <script src="assets/js/contact.js"></script>
+</body>
 
 </html>
