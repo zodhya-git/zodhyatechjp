@@ -82,6 +82,14 @@
             emailjs.init('ZiNmyMtEd7qsNbXS9');
         })();
     </script>
+    <style>
+        #txt-custom {
+            display: none;
+        }
+        #remark{
+            display: none;
+        }
+    </style>
 
 </head>
 
@@ -149,8 +157,8 @@
         <div class="menu-backdrop"></div>
         <div class="close-btn"><i class="fas fa-times"></i></div>
         <nav class="menu-box">
-            <div class="nav-logo"><a href="index.html"><img src="assets/images/logo_black.png"  alt="zodhya.png"
-                title="Zodhya"></a>
+            <div class="nav-logo"><a href="index.html"><img src="assets/images/logo_black.png" alt="zodhya.png"
+                        title="Zodhya"></a>
             </div>
             <div class="menu-outer">
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
@@ -206,7 +214,7 @@
                         <form id="calculatorForm">
                             <div class="form-group">
                                 <label>Type of HVAC</label>
-                                <select class="form-control" name="type_of_HVAC" id="type_of_HVAC" required>
+                                <!-- <select class="form-control" name="type_of_HVAC" id="type_of_HVAC" >
                                     <option></option>
                                     <option value="0">AHU</option>
                                     <option value="1"> Cassette/Split </option>
@@ -215,15 +223,42 @@
                                     <option value="4"> VRF </option>
                                     <option value="5"> Miscellenous (Any Combination like Ductable & VRf, chiller & AHU etc.)
                                     </option>
-                                </select>
-                            </div>
+                                </select> -->
+                                <div>
+                                    <label for="AHU"><small>AHU</small></label>
+                                    <input type="checkbox" name="AHU" value="1" id="AHU" onchange="openInputRemark(this)" />
 
+                                    <label for="Cassette"><small>&nbsp; Cassette/Split </small></label>
+                                    <input type="checkbox" name="Cassette" value="1" id="Cassette" onchange="openInputRemark(this)"/>
+
+                                    <label for="Chiller"><small> &nbsp; Chiller</small></label>
+                                    <input type="checkbox" name="Chiller" value="1" id="Chiller" onchange="openInputRemark(this)"/>
+
+                                    <label for="Ductable"> <small> &nbsp; Ductable </small></label>
+                                    <input type="checkbox" name="Ductable" value="1" id="Ductable" onchange="openInputRemark(this)"/>
+
+                                    <label for="VRF"> <small> &nbsp;VRF </small></label>
+                                    <input type="checkbox" name="VRF" value="1" id="VRF" onchange="openInputRemark(this)"/>
+
+                                    <label for="custom"> <small>&nbsp; Other </small></label>
+                                    <input type="checkbox" id="custom" onchange="openInput(this)">
+                                    
+                                    <input type="text" class="form-control" id="remark" name="remark"
+                                        placeholder="No of HVAC (Ex. 2 AHU, 1 Chiller etc.) Or any other remarks." style="margin-bottom: 5px;" />
+                                    
+                                    <input type="text" class="form-control" id="txt-custom" name="customtype"
+                                        placeholder="Enter Type of the HVAC" />
+                                    
+                                </div>
+                            </div>
                             <div class="form-group">
-                                <label>Capacity of HVAC in tonnes <small>(Calculate the total capacity. Eg: If there
-                                        are two split ACs in the room of capacities 1.5Tr & 2Tr, the overall capacity
+                                <label>Capacity of HVAC in tonnes <small>(Calculate the total capacity. Eg: If
+                                        there
+                                        are two split ACs in the room of capacities 1.5Tr & 2Tr, the overall
+                                        capacity
                                         would be 1.5 + 2 = 3.5Tr.)</small> </label>
                                 <input type="number" class="form-control" min="0" id="capacity_of_HVAC"
-                                    name="capacity_of_HVAC" required step=0.01>
+                                    name="capacity_of_HVAC" step=0.01 required>
                             </div>
 
                             <div class="form-group">
@@ -231,7 +266,7 @@
                                 <input type="number" class="form-control" min="0" id="size_of_building"
                                     name="size_of_building" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">No of floor in your space </label>
                                 <input type="number" class="form-control" min="1" id="floor_of_building"
@@ -239,7 +274,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Weather conditions <small>(Refer to the Climate Zones image on this page to know
+                                <label>Weather conditions <small>(Refer to the Climate Zones image on this page
+                                        to know
                                         which weather conditions your city falls under)</small> </label>
                                 <select class="form-control" id="weather_conditions" name="weather_conditions" required>
                                     <option></option>
@@ -255,13 +291,13 @@
                             <div class="form-group">
                                 <label>No. of hours the HVAC will be operated in a day </label>
                                 <input type="number" class="form-control" min="1" max="24" id="working_hour"
-                                    name="working_hour" required required step=0.01>
+                                    name="working_hour" step=0.01 required>
                             </div>
 
                             <div class="form-group">
                                 <label>Last month's Bill in INR (₹) </label>
                                 <input type="number" class="form-control" min="1" id="last_month_bill"
-                                    name="last_month_bill" required required step=0.01>
+                                    name="last_month_bill" step=0.01 required>
                             </div>
 
                             <div class="form-group">
@@ -286,7 +322,8 @@
                                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
                                         <option value="Assam">Assam</option>
-                                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands
+                                        </option>
                                         <option value="Bihar">Bihar</option>
                                         <option value="Chhattisgarh">Chhattisgarh</option>
                                         <option value="Goa">Goa</option>
@@ -317,7 +354,8 @@
                                 <div class="col-6">
                                     <label>City</label>
                                     <select class="form-control" id="choices" name="city" required>
-                                        <option value="" disabled selected>Please select your state first</option>
+                                        <option value="" disabled selected>Please select your state first
+                                        </option>
                                     </select>
                                 </div>
                             </div>
@@ -481,7 +519,23 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/calculator.js"></script>
     <script src="assets/js/back4app.js"></script>
-   <script src="assets/js/cities.js"></script>
+    <script src="assets/js/cities.js"></script>
+
+    <script>
+        function openInput(checkboxElem) {
+            if (checkboxElem.checked) {
+                document.getElementById('txt-custom').style.display = 'block';
+            } else {
+                document.getElementById('txt-custom').style.display = 'none';
+            }
+        }
+
+        function openInputRemark(checkboxElem) {
+            if (checkboxElem.checked) {
+                document.getElementById('remark').style.display = 'block';
+            }
+        }
+    </script>
 </body><!-- End of .page_wrapper -->
 
 </html>
