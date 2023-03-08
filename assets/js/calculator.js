@@ -36,7 +36,9 @@ thisForm.addEventListener('submit', async function (e) {
     console.log(result)
     document.querySelector(".preload").style.display = "none"
     // var saver = result[0]
-    var saver = result.last_month_bill
+    var saver=result.capacity_of_HVAC* result.size_of_building * 12  * 240 
+    
+    // var saver = result.last_month_bill
 
     
     saver = Math.ceil(saver / 100) * 100
