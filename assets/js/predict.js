@@ -5,7 +5,7 @@
 
     const formData = new FormData(optimalForm).entries()
     try {
-      const response = await fetch('http://yashwanthzodhya.pythonanywhere.com/predict_api', {
+      const response = await fetch('https://yashwanthzodhya.pythonanywhere.com/predict_api', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(Object.fromEntries(formData))
