@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>DXLab Problem</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://latex.now.sh/style.css">
+</head>
+<body>
+ <div class="login">
+	<h1>Optimal Settings Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+     <!-- input_cols = ['device_id', 'user_id', 'eco_mode', 'motion_sensor_readings', 'room_temperature', 'powerful_mode', 'outdoor_air_temperature', 'diag_room_temperature', 'hour', 'previous_setpoint'] -->
+     <!-- <fieldset id = "forms__input"> -->
+
+      <!-- Center the button -->
+      <button id="fill-form-btn" type="button">Fill Random Values from Test Dataframe</button>
+      <p></p>
+
+      <table>
+      <form id="optimalForm" method="post">
+          <tr>
+            <td><label for="Room Temperature">Room Temperature</label></td>
+            <td><input type="text" id="room_temperature" name="room_temperature" placeholder="In Celsius" required="required" /></td>
+          </tr>
+          <tr>
+            <td><label for="Outdoor Air Temperature">Outdoor Air Temperature</label></td>
+            <td><input type="text" id="outdoor_air_temperature" name="outdoor_air_temperature" placeholder="In Celsius" required="required" /></td>
+          </tr>
+          <tr>
+            <td><label for="Diagnostic Data Room Temperature">Diagnostic Data Room Temperature</label></td>
+            <td><input type="text" id="diag_room_temperature" name="diag_room_temperature" placeholder="In Celsius" required="required" /></td>
+          </tr>
+          <tr>
+            <td><label for="Hour of Day">Hour of Day</label></td>
+            <td><input type="text" id="hour" name ="hour" placeholder="Number" required="required" /></td>
+          </tr>
+          <tr>
+            <td><label for="Previous Setpoint">Previous Setpoint</label></td>
+            <td><input type="text" id="previous_temp" name="previous_temp" placeholder="In Celsius" required="required" /></td>
+          </tr>
+          <tr>
+            <td><label for="Previous Mode">Previous Mode</label></td>
+            <td><input type="text" id="previous_mode" name="previous_mode" placeholder="In Celsius" required="required" /></td>
+          </tr>
+          <tr>
+            <td><label for="Previous Fan Speed">Previous Fan Speed</label></td>
+            <td><input type="text" id="previous_speed" name="previous_speed" placeholder="In Celsius" required="required" /></td>
+          </tr>
+          <tr>
+            <td><button type="submit" class="btn btn-primary btn-block btn-large">Predict Settings</button></td>
+          </tr>
+        </form>
+      </table>
+   <br>
+   <br>
+   
+   <h5 id="optimalresult"></h5>
+
+   <script>
+    function fillForm() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://yashwanthzodhya.pythonanywhere.com/data');
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          var row = JSON.parse(xhr.responseText);
+          // fill in the form elements with values from the selected row
+          document.getElementById("room_temperature").value = row[0]["room_temperature"];
+          document.getElementById("outdoor_air_temperature").value = row[0]["outdoor_air_temperature"];
+          document.getElementById("diag_room_temperature").value = row[0]["diag_room_temperature"];
+          document.getElementById("hour").value = row[0]["hour"];
+          document.getElementById("previous_temp").value = row[0]["previous_temp"];
+          document.getElementById("previous_mode").value = row[0]["previous_mode"];
+          document.getElementById("previous_speed").value = row[0]["previous_speed"];
+        } else {
+          console.log('Request failed.  Returned status of ' + xhr.status);
+        }
+      };
+      xhr.send();
+    }
+    // add an event listener to the button
+    var fillFormBtn = document.getElementById("fill-form-btn");
+    fillFormBtn.addEventListener("click", fillForm);
+  </script>
+
+ <script src="assets/js/predict.js"></script>
+ </div>
+</body>
+</html>
