@@ -11,3 +11,11 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         });
 
 });
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbylI_4YgXxR9VIoXQNHhCvpQPQGxkBinYmpKFqbNNt_mHOLvamgvHiTT0HPCnRjKFfR/exec'
+const form = document.getElementById('contact-form')
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+})
