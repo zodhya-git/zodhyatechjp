@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,200;1,400&family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap');
  
 /* Css For Detox */
 
@@ -74,7 +75,7 @@ body {
   line-height:32px;
   font-weight:400;
   background:#ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center top;
@@ -163,7 +164,7 @@ p{
   position: relative;
   font-size: 17px;
   line-height: 32px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #848484;
   margin: 0px;
   transition: all 500ms ease;
@@ -171,7 +172,7 @@ p{
 
 h1,h2,h3,h4,h5,h6{
   position:relative;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #0e1221;
   margin: 0px;
@@ -267,7 +268,7 @@ img {
   font-size: 17px;
   line-height: 30px;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #fff !important;
   padding: 15px 58px;
   text-align: center;
@@ -447,7 +448,7 @@ img {
   position: relative;
   font-size: 18px;
   line-height: 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 14px;
@@ -563,7 +564,7 @@ img {
 
 .main-header .outer-container .menu-right-content .phone{
   font-size: 18px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 30px;
   font-weight: 600;
   color: #3b3b3b;
@@ -592,7 +593,7 @@ img {
   display: inline-block;
   overflow: hidden;
   font-size: 18px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 30px;
   font-weight: 600;
   color: #3b3b3b;
@@ -701,7 +702,7 @@ img {
   line-height:30px;
   font-weight:600;
   opacity:1;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color:#3b3b3b;
   padding: 0px;
   z-index:1;
@@ -1328,7 +1329,7 @@ div#mCSB_1_container{
   overflow: hidden;
   font-size: 17px;
   line-height: 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #3b3b3b;
   padding: 15px 0px 15px 75px;
@@ -1772,7 +1773,7 @@ div#mCSB_1_container{
   top: 12px;
   font-size: 30px;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: #fff;
   width: 66px;
   height: 66px;
@@ -2195,7 +2196,7 @@ div#mCSB_1_container{
   border-radius: 30px;
   font-size: 17px;
   line-height: 26px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #3b3b3b;
   cursor: pointer;
@@ -2238,7 +2239,7 @@ div#mCSB_1_container{
   position: relative;
   display: inline-block;
   font-size: 17px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 26px;
   color: #848484;
 }
@@ -3185,7 +3186,7 @@ div#mCSB_1_container{
   left: 0px;
   top: 0px;
   font-size: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #fff;
   width: 50px;
@@ -3222,7 +3223,7 @@ div#mCSB_1_container{
   display: block;
   font-size: 50px;
   line-height: 50px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #fff;
   margin-bottom: 13px;
@@ -3232,7 +3233,7 @@ div#mCSB_1_container{
   position: relative;
   font-size: 17px;
   line-height: 26px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -3833,7 +3834,7 @@ div#mCSB_1_container{
   display: inline-block;
   font-size: 15px;
   line-height: 26px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-right: 15px;
   margin-right: 5px;
 }
@@ -4231,7 +4232,7 @@ div#mCSB_1_container{
   display: inline-block;
   font-size: 16px;
   line-height: 26px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #3b3b3b;
   text-transform: uppercase;
@@ -4494,7 +4495,7 @@ div#mCSB_1_container{
   display: block;
   font-size: 16px;
   line-height: 26px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #252930;
   padding: 5px 0px;
 }
@@ -4600,7 +4601,7 @@ div#mCSB_1_container{
   display: inline-block;
   font-size: 15px;
   line-height: 26px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #25283a;
   border: 1px solid #e5e5e5;
   border-radius: 10px;
@@ -4687,7 +4688,7 @@ div#mCSB_1_container{
 
 .blog-details .blog-details-content .news-block-one .inner-box .lower-content .post-share-option ul li{
   font-size: 17px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #898c8f;
 }
 
