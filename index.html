@@ -50,6 +50,18 @@
     <link href="assets/css/rtl.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <style>
+        .achivement-icon-box {
+            position: absolute;
+            left: 0px;
+            top: 12px;
+            background: #fff;
+            width: 90px;
+            height: 90px;
+            align-items: center;
+        }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <!-- Google tag (gtag.js) -->
@@ -97,11 +109,26 @@
                         <nav style="margin-left:3vw;" class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="index.html">Home</a></li>
+                                    <li class="current"><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About Us</a></li>
-                                    <li><a href="media.html">Media and Achievements</a></li>
-                                    <li><a href="blog.html" >Blog</a></li>
-                                    <li><a href="calculator.html">Calculator</a></li>
+                                    <li class="dropdown"><a href="index-3.html">Products</a>
+                                        <ul>
+                                            <li><a href="soul.html">Soul</a></li>
+                                            <li><a href="saverx.html">SaverX</a></li>
+                                            <li><a href="saver.html">Saver</a></li>
+
+                                        </ul>
+                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                                    </li>
+                                    <li class="dropdown"><a href="index-3.html">FAQ</a>
+                                        <ul>
+                                            <li><a href="service.html">Services One</a></li>
+                                            <li><a href="service-2.html">Services Two</a></li>
+                                        </ul>
+                                        <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                                    </li>
+                                    <li><a href="blog.html">Blogs</a></li>
+
                                     <li><a style="color:#F68838;" onMouseOver="this.style.color='#1b617d'"
                                             onMouseOut="this.style.color='#F68838'" href="contact.html">Contact Us</a>
                                     </li>
@@ -160,7 +187,7 @@
     <!-- End Mobile Menu -->
 
 
-    <!-- banner-section -->
+    <!-- Heading-section -->
     <section class="banner-section style-three">
         <div class="pattern-box">
             <div class="pattern-1 wow slideInDown" data-wow-delay="00ms" data-wow-duration="1500ms"
@@ -171,10 +198,10 @@
             <div class="row clearfix">
                 <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                     <div class="content-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <h1 style="font-size:45px; font-family:'Poppins';">MAKE YOUR COMMERCIAL SPACES <span class="animate-text">ENERGY
+                        <h1 style="font-size:45px; font-family:'Poppins';">MAKE YOUR COMMERCIAL SPACES <span
+                                class="animate-text">ENERGY
                                 EFFICIENT</span></h1>
-                        <p>Now reduce your emissions and lower your energy bills by 30% with zero upfront
-                            investment.<br>
+                        <p>Now lower your ENERGY BILLS by 30% and reduce CARBON EMISSIONS with zero upfront investmentg.<br>
                             <strong>Backed by Rainmatter Climate Investments. Recognized by WWF.</strong>
                         </p>
                     </div>
@@ -189,9 +216,9 @@
             </div>
         </div>
     </section>
-    <!-- banner-section end -->
+    <!--Heading-section end -->
 
-    <!-- about-section -->
+    <!-- Problem-section -->
     <section class="about-section style-three">
         <div class="pattern-layer" style="background-image: url(assets/images/shape/pattern-14.png);"></div>
         <div class="auto-container">
@@ -200,17 +227,14 @@
                     <div id="content_block_05">
                         <div class="content-box">
                             <div class="sec-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                                <h2>Burdened with high energy bills ? </h2>
+                                <h2>Problem </h2>
                             </div>
                             <ul class="list-item clearfix wow fadeInUp" data-wow-delay="400ms"
                                 data-wow-duration="1500ms">
-                                <li><i class="fa-solid fa-bolt"></i> 60-70% of energy consumption in commercial spaces
-                                    is
-                                    from air conditioning.</li>
-                                <li><i class="fa-solid fa-bolt"></i> Extended usage of 10-14hrs/day reduces the
-                                    efficiency.</li>
-                                <li><i class="fa-solid fa-bolt"></i> Managing multiple spaces is chaotic and not easy to
-                                    keep track of.</li>
+                                <li><i class="fa-solid fa-bolt"></i> One-third of the global emissions are from buildings, the primary reason being electricity.</li>
+                                <li><i class="fa-solid fa-bolt"></i> 60-70% of energy consumption in commercial spaces is contributed by air conditioning/ HVAC usage.</li>
+                                <li><i class="fa-solid fa-bolt"></i> Extended working hours of 10-14 hours per day also lead to higher energy usage.</li>
+                                <li><i class="fa-solid fa-bolt"></i> Managing and keeping track of multiple spaces is chaotic resulting in operational inefficiencies.</li>
                             </ul>
                         </div>
                     </div>
@@ -229,137 +253,243 @@
             </div>
         </div>
     </section>
-    <!-- about-section end -->
+    <!-- problem-section end -->
 
-    <!-- product-section start-->
-    <section class="about-style-four">
+    <!-- Products-section -->
+    <section class="portfolio-page-section Portfolio-grid">
         <div class="auto-container">
-            <div class="row clearfix">
-                <div class="col-lg-6 col-md-6 col-sm-12 content-column">
-                    <div id="content_block_05">
-                        <div class="content-box">
-                            <div class="sec-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                                <p><strong> Our Products </strong> </p>
-                                <h2>Saver</h2>
+            <div class="sec-title text-center">
+                <h2>Products</h2>
+            </div>
+            <div class="sortable-masonry">
+                <div class="items-container row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all photography design development">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="image-holder">
+                                    <figure class="image-box">
+                                        <img src="assets/images/Dashboard.png" alt="">
+                                    </figure>
+                                    <a href="assets/images/Dashboard.png" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                                </div>
+                                <div class="lower-content">
+                                    <h3><a href="portfolio-details.html">Soul</a></h3>
+                                    <span>Operate your business smarter. Track energy inefficiencies real time.</span>
+                                </div>
                             </div>
-                            <ul style="font-size: large;">
-                                <li><i class="fa-solid fa-bolt"></i> A patented device that uses AI to reduce
-                                    consumption on your ACs by 30% with zero compromises on cooling comfort.</li>
-                                <li><i class="fa-solid fa-bolt"></i> Can be retrofitted with existing infra.</li>
-                                <li><i class="fa-solid fa-bolt"></i> You start saving from Day 1.</li>
-                                <li><i class="fa-solid fa-bolt"></i> No changes in the way you run your AC.</li>
-
-                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 image-column">
-                    <div id="image_block_05">
-                        <div class="image-box">
-                            <figure class="image image-1 wow slideInRight" data-wow-delay="300ms"
-                                data-wow-duration="1500ms">
-                                <img src="assets/images/device.png" alt="saver.jpg">
-                            </figure>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all design product">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="image-holder">
+                                    <figure class="image-box">
+                                        <img src="assets/images/Dashboard.png" alt="">
+                                    </figure>
+                                    <a href="assets/images/Dashboard.png" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                                </div>
+                                <div class="lower-content">
+                                    <h3><a href="portfolio-details.html">SaverX</a></h3>
+                                    <span>Add intelligence to your existing BMS and save energy bills.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all photography development">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="image-holder">
+                                    <figure class="image-box">
+                                        <img src="assets/images/Dashboard.png" alt="">
+                                    </figure>
+                                    <a href="assets/images/Dashboard.png" class="lightbox-image view-btn" data-fancybox="gallery"><i class="fas fa-search-plus"></i></a>
+                                </div>
+                                <div class="lower-content">
+                                    <h3><a href="portfolio-details.html">Saver</a></h3>
+                                    <span>Retrofit to your existing AC and reduce energy consumption by 30%.</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- product-section end -->
+    <!-- Products-section end -->
 
 
-    <!--  about-style-five-->
-    <section class="about-section style-three">
-        <div class="pattern-layer" style="background-image: url(assets/images/shape/pattern-14.png);"></div>
+    
+    <!-- media-section00 -->
+    <!-- <section class="service-section">
         <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2>Achievements & Media Updates</h2>
+            </div>
             <div class="row clearfix">
-                <div class="col-lg-6 col-md-6 col-sm-12 content-column">
-                    <div id="content_block_05">
-                        <div class="content-box">
-                            <div class="sec-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                                <h2> Soul: Real-Time Prediction</h2>
+                <div class="col-lg-6 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+
+                        <div class="inner-box">
+                            <div class="achivement-icon-box"><img src="assets/images/achivements/thub.png"
+                                    alt="thub.png"></div>
+                            <h3>Got selected from 2000 startups and incubated at T-hub Lab 32</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="achivement-icon-box"><img src="assets/images/achivements/carbonexchange.png"
+                                    alt="carbonexchange.png"></div>
+                            <h3>A program by EnKing international on carbon offset markets.</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="achivement-icon-box"><img src="assets/images/achivements/wwf.png" alt="wwf.png">
                             </div>
-                            <ul class="list-item clearfix wow fadeInUp" data-wow-delay="400ms"
-                                data-wow-duration="1500ms">
-                                <li><i class="fa-solid fa-bolt"></i> Your energy usage can now be seen and accounted for
-                                    right from your screen.</li>
-                                <li><i class="fa-solid fa-bolt"></i> Benchmark your spaces based on energy usage.</li>
-                                <li><i class="fa-solid fa-bolt"></i> Helps you detect malfunctioned and inefficient
-                                    hotspots.</li>
-                            </ul>
+                            <h3>Part of their Climate Solver Business. Accelerator'19 in collaboration with
+                                ISB-Hyderabad.</h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 image-column">
-                    <div id="image_block_05">
-                        <div class="image-box">
-                            <figure class="image image-1 wow slideInRight" data-wow-delay="00ms"
-                                data-wow-duration="1500ms">
-                                <img src="assets/images/realtimemonitoring.png" alt="realtimemonitoring.png">
-                            </figure>
+                <div class="col-lg-6 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="achivement-icon-box"><img src="assets/images/achivements/worldurban.png"
+                                    alt="thub.png"></div>
+                            <h3>Finalist at WUF11 Katowice Energy innovation Challenge by UN Habitat & Rawalnk.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="achivement-icon-box"><img src="assets/images/achivements/bwt.png"
+                                    alt="thub.png"></div>
+                            <h3>Finalist of the BWT india event in the Proptech sector.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="achivement-icon-box"><img src="assets/images/achivements/flctd.png"
+                                    alt="thub.png"></div>
+                            <h3>Part of the 2022 accelerator by FLCTD - by BEE, UNIDO & Sangam Ventures. </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow fadeInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="achivement-icon-box"><img src="assets/images/achivements/fiire.png"
+                                    alt="thub.png"></div>
+                            <h3>Part of the Goa Tourism Accelerator Program 2021 in collaboration with Goa tourism
+                                department.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- media-section end -->
+  
+
+    <!-- media-section01-->
+    <section class="testimonial-style-two text-center">
+        <div class="pattern-layer" style="background-image: url(assets/images/shape/pattern-17.png);"></div>
+        <div class="auto-container">
+            <div class="upper-box">
+                <div class="sec-title">
+                    <h2>Achievements & Media Updates</h2>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-10 col-md-12 col-sm-12 offset-lg-1 inner-column">
+                    <div class="testimonial-carousel-2 owl-carousel owl-theme owl-nav-none">
+                        <div class="testimonial-content">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/achivements/thub01.png" alt=""></figure>
+                                <p>Got selected from 2000 startups and incubated at T-hub Lab 32</p>
+                                <div class="author-info">
+                                
+                                    <span class="designation">T-hub</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/achivements/wwf01.png" alt=""></figure>
+                                <p>Part of their Climate Solver Business. Accelerator'19 in collaboration with ISB-Hyderabad.</p>
+                                <div class="author-info">
+                                    <span class="designation">WWF</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/achivements/bwt01.png" alt=""></figure>
+                                <p>Finalist of the BWT india event in the Proptech sector.</p>
+                                <div class="author-info">
+                                  
+                                    <span class="designation">Bwt india</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/achivements/fiire01.png" alt=""></figure>
+                              <p>Part of the Goa Tourism Accelerator Program 2021 in collaboration with Goa tourism department.</p>
+                                <div class="author-info">
+                                    <span class="designation">FiiRE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/achivements/carbonexchange01.png" alt=""></figure>
+                                <p>A program by EnKing international on carbon offset markets.</p>
+                                <div class="author-info">
+                                    
+                                    <span class="designation">Carbone Xchange</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/achivements/worldurban01.png" alt=""></figure>
+                                <p>Finalist at WUF11 Katowice Energy innovation Challenge by UN Habitat & Rawalnk.</p>
+                                <div class="author-info">  
+                                    <span class="designation">World Urban Forum</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/achivements/flctd01.png" alt=""></figure>
+                                <p>Part of the 2022 accelerator by FLCTD - by BEE, UNIDO & Sangam Ventures.</p>
+                                <div class="author-info">
+                                    <span class="designation">FLCTD</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- about-style-five end  -->
+    <!-- media-section end -->
 
 
-    <!-- service-style-two -->
-    <section class="chooseus-section bg-color-1">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                    <div id="content_block_08">
-                        <div class="content-box">
-                            <div class="top-box">
-                                <div class="sec-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-
-                                    <h2>Path To Savings</h2>
-                                </div>
-
-                            </div>
-                            <div class="inner-box clearfix wow fadeInUp" data-wow-delay="400ms"
-                                data-wow-duration="1500ms">
-                                <div class="single-item">
-                                    <div class="icon-box"><i class="flaticon-machine-learning"></i></div>
-                                    <h3>Tell us about your space</h3>
-                                    <p>Average energy consumption, specifications of your ACs and operational hours.
-                                    </p>
-                                </div>
-                                <div class="single-item">
-                                    <div class="icon-box"><i class="flaticon-data-integration"></i></div>
-                                    <h3>Demo</h3>
-                                    <p>We’ll run a demo at your space and determine the % savings we can achieve.</p>
-                                </div>
-                                <div class="single-item">
-                                    <div class="icon-box"><i class="flaticon-robot"></i></div>
-                                    <h3>Implementation</h3>
-                                    <p>Once you’re convinced, sign up to start using the product.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div id="image_block_07">
-                        <div style="width: 80%;" class="image-box wow slideInRight" data-wow-delay="0ms"
-                            data-wow-duration="1500ms">
-                            <figure class="image js-tilt"><img src="assets/images/Server-cuate.png" alt=""></figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- service-style-two end -->
-
-
-    <!-- product-section start-->
-    <section class="about-style-four">
+    
+    <!-- calculator-section start-->
+    <!-- <section class="about-style-four">
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="col-lg-6 col-md-6 col-sm-12 content-column">
@@ -391,8 +521,10 @@
 
             </div>
         </div>
-    </section>
-    <!-- product-section end -->
+    </section> -->
+    <!-- calculator-section end -->
+
+
 
     <!-- contact-section -->
     <section class="cta-section bg-color-2">
@@ -411,7 +543,8 @@
                     <div style="color: white;" class="contact-info">
                         <h3 style="color: white;">Address</h3>
 
-                        <p style="color: white;">T-hub Foundation, Knowledge City, Sy No 83/1, Raidurg, Hyderabad - 500081</p>
+                        <p style="color: white;">T-hub Foundation, Knowledge City, Sy No 83/1, Raidurg, Hyderabad -
+                            500081</p>
 
                     </div>
 
@@ -424,90 +557,6 @@
     </section>
     <!-- contact-sectione end -->
 
-    <!--FAQ Section Starts-->
-    <section class="faq-section bg-color-1">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                    <div id="content_block_06">
-                        <div class="content-box">
-                            <div class="sec-title">
-                                <p>Have A Question?</p>
-                                <h2>Frequently<br />Asked Questions</h2>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 inner-column">
-                    <div id="content_block_07">
-                        <ul class="accordion-box">
-                            <li class="accordion block ">
-                                <div class="acc-btn ">
-                                    <h4><span>Q.</span>Does the Saver device tamper with the warranty of the HVAC
-                                        system?
-                                    </h4>
-                                </div>
-                                <div class="acc-content ">
-                                    <div class="content">
-                                        <p>No, it doesn't tamper with any warranties. Our device sits externally in
-                                            series with the power supply. We neither meddle with any of the internal
-                                            circuits nor with the existing infrastructure of the space.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="accordion block">
-                                <div class="acc-btn">
-                                    <h4><span>Q.</span>Does the Saver switch on & off the AC? Is it like an
-                                        automation device?
-                                    </h4>
-                                </div>
-                                <div class="acc-content">
-                                    <div class="content">
-                                        <p>No, the Saver is neither an automation device nor does it take control
-                                            over the AC. The complete control is still with the user. Our device will
-                                            only find the least energy consuming path using its self-learning algorithms
-                                            to reach the set conditions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="accordion block">
-                                <div class="acc-btn">
-                                    <h4><span>Q.</span>Is the Saver like a capacitor/power factor correction/
-                                        voltage regulator?
-                                    </h4>
-                                </div>
-                                <div class="acc-content">
-                                    <div class="content">
-                                        <p>None of the above. Our device works on a sophisticated self-learning
-                                            algorithm which understands the user behavior and conditions to consume the
-                                            least possible energy.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="accordion block">
-                                <div class="acc-btn">
-                                    <h4><span>Q.</span>How much does the Saver cost?
-                                    </h4>
-                                </div>
-                                <div class="acc-content">
-                                    <div class="content">
-                                        <p> The pricing is a subscription model based on the energy bill and savings
-                                            possible. We also offer one-time payment based on the client profile &
-                                            buildings.
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--FAQ Section ends -->
 
     <!-- main-footer -->
     <footer class="main-footer">
@@ -546,7 +595,8 @@
                                 </div>
                                 <div class="widget-content">
                                     <ul>
-                                        <li>T-hub Foundation, Knowledge City, Sy No 83/1, Raidurg, Hyderabad - 500081</li>
+                                        <li>T-hub Foundation, Knowledge City, Sy No 83/1, Raidurg, Hyderabad - 500081
+                                        </li>
                                         <li><a href="mailto:contact@zodhyatech.com"
                                                 style="color: #f0842c;">contact@zodhyatech.com</a></li>
                                     </ul>
@@ -595,6 +645,7 @@
     <!-- <script src="assets/js/validation.js"></script> -->
     <script src="assets/js/jquery.fancybox.js"></script>
     <script src="assets/js/appear.js"></script>
+    <script src="assets/js/isotope.js"></script>
     <script src="assets/js/scrollbar.js"></script>
     <script src="assets/js/tilt.jquery.js"></script>
     <!-- <script src="assets/js/jQuery.style.switcher.min.js"></script> -->
