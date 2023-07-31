@@ -62,10 +62,21 @@
 
         gtag('config', 'G-VM2VGRHEX1');
     </script>
-
     <style>
-        .fa-bolt {
-            color: #F68838;
+        optgroup {
+            font-size: 20px;
+        }
+        select {
+            position: relative;
+            font-size: 40px;
+            line-height: 60px;
+            color: #3b3b3b;
+            font-weight: 700;
+            padding-bottom: 0px;
+        }
+        #saverfaq, 
+        #saverxfaq{
+            display: none;
         }
     </style>
 </head>
@@ -182,7 +193,7 @@
     <!--End Page Title-->
 
 
-    <!-- soul faq-section -->
+    <!-- faq-section -->
     <section class="faq-section faq-page-section sec-pad">
         <div class="auto-container">
             <div class="row clearfix">
@@ -191,14 +202,20 @@
                         <div class="content-box">
                             <div class="sec-title">
                                 <p>Have A Question?</p>
-                                <h2>Soul</h2>
+                                <select name="product" id="product" onchange="showfaqs()">
+                                    <optgroup>
+                                        <option value="soul">Soul</option>
+                                        <option value="saverx">SaverX</option>
+                                        <option value="saver">Saver</option>
+                                    </optgroup>
+                                </select>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
                     <div id="content_block_07">
-                        <ul class="accordion-box">
+                        <ul class="accordion-box" id="soulfaq">
                             <li class="accordion block active-block">
                                 <div class="acc-btn active">
                                     <h4><span>Q.</span>Can Soul be used from any part of the world?</h4>
@@ -389,30 +406,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- soul faq-section end -->
-
-    <!-- saverX faq-section -->
-    <section class="faq-section faq-page-section sec-pad">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <div class="col-lg-4 col-md-12 col-sm-12 content-column">
-                    <div id="content_block_06">
-                        <div class="content-box">
-                            <div class="sec-title">
-                                <p>Have A Question?</p>
-                                <h2>SaverX</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
-                    <div id="content_block_07">
-                        <ul class="accordion-box">
+                        <ul class="accordion-box" id="saverxfaq">
                             <li class="accordion block active-block">
                                 <div class="acc-btn active">
                                     <h4><span>Q.</span>How is SaverX different from a BMS system?</h4>
@@ -449,30 +443,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- saverXfaq-section end -->
-
-    <!-- saver faq-section -->
-    <section class="faq-section faq-page-section sec-pad">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <div class="col-lg-4 col-md-12 col-sm-12 content-column">
-                    <div id="content_block_06">
-                        <div class="content-box">
-                            <div class="sec-title">
-                                <p>Have A Question?</p>
-                                <h2>Saver</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
-                    <div id="content_block_07">
-                        <ul class="accordion-box">
+                        <ul class="accordion-box" id="saverfaq">
                             <li class="accordion block active-block">
                                 <div class="acc-btn active">
                                     <h4><span>Q.</span>Does the Saver device tamper with the warranty of the HVAC
@@ -534,8 +505,7 @@
             </div>
         </div>
     </section>
-    <!-- saverXfaq-section end -->
-
+    <!-- faq-section end -->
 
     <!-- contact-section -->
     <section class="cta-section bg-color-2">
@@ -665,7 +635,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/wow.js"></script>
-    <script src="assets/js/validation.js"></script>
+    <!-- <script src="assets/js/validation.js"></script> -->
     <script src="assets/js/jquery.fancybox.js"></script>
     <script src="assets/js/appear.js"></script>
     <script src="assets/js/scrollbar.js"></script>
@@ -675,6 +645,42 @@
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
 
-</body><!-- End of .page_wrapper -->
+    <script>
+        function showfaqs() {
+
+            let selectElement = document.querySelector('#product');
+            let place = document.getElementById("content_block_07")
+
+            let soul=document.getElementById('soulfaq')
+            let saverx=document.getElementById('saverxfaq')
+            let saver=document.getElementById('saverfaq')
+            
+
+            value = selectElement.value;
+
+            let faq = ""
+          
+            if (value === "soul") {
+                soul.style.display='block'
+                saverx.style.display='none'
+                saver.style.display='none'
+            }
+            else if (value === "saverx") {
+                soul.style.display='none'
+                saverx.style.display='block'
+                saver.style.display='none'
+            }
+            else if (value === "saver") {
+                soul.style.display='none'
+                saverx.style.display='none'
+                saver.style.display='block'
+            }
+
+            // place.innerHTML = faq
+            // place.insertAdjacentHTML("afterbegin", faq);
+        }
+    </script>
+
+</body>
 
 </html>
