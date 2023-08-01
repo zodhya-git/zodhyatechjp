@@ -728,7 +728,7 @@ img {
   opacity: 0;
   visibility: hidden;
   padding: 20px 0px;
-  background-color: #333;
+  background-color: #fff;
   -moz-transform: translateY(30px);
   -webkit-transform: translateY(30px);
   -ms-transform: translateY(30px);
@@ -772,7 +772,7 @@ img {
   font-weight:400;
   font-size:14px;
   text-transform:capitalize;
-  color:#fff;
+  color:#000000;
   text-align: left;
   transition:all 500ms ease;
   -moz-transition:all 500ms ease;
