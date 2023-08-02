@@ -74,6 +74,14 @@
             font-weight: 700;
             padding-bottom: 0px;
         }
+        .select-box{
+            background: rgba(255, 255, 255); 
+            border-radius:15px;
+            padding: 10px;
+            cursor: pointer; 
+            box-shadow: 0 14px 28px rgba(243, 242, 242, 0.87), 0 10px 10px rgba(0,0,0,0.22);
+
+        }
         #saverfaq, 
         #saverxfaq{
             display: none;
@@ -202,7 +210,7 @@
                         <div class="content-box">
                             <div class="sec-title">
                                 <p>Have A Question?</p>
-                                <select name="product" id="product" onchange="showfaqs()">
+                                <select name="product" id="product" onchange="showfaqs()" class="select-box">
                                     <optgroup>
                                         <option value="soul">Soul</option>
                                         <option value="saverx">SaverX</option>
