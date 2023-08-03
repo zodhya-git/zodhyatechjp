@@ -399,7 +399,7 @@ img {
 }
 
 .sec-pad{
-  padding: 15px 0px !important;
+  padding: 20px 0px !important;
 }
 
 .sec-pad-2{
@@ -1652,7 +1652,7 @@ div#mCSB_1_container{
 .about-section{
   position: relative;
   background: #fff;
-  padding: 50px 0px 150px 0px;
+  padding: 100px 0px 150px 0px;
 }
 
 #content_block_01 .content-box .text{
