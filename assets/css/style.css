@@ -399,7 +399,7 @@ img {
 }
 
 .sec-pad{
-  padding: 50px 0px !important;
+  padding: 15px 0px !important;
 }
 
 .sec-pad-2{
@@ -1839,11 +1839,11 @@ div#mCSB_1_container{
 .service-section{
   position: relative;
   background: #fff;
-  padding: 150px 0px 55px 0px;
+  padding: 100px 0px 55px 0px;
 }
 
 .service-section .sec-title{
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .service-block-one .inner-box{
@@ -2309,7 +2309,7 @@ div#mCSB_1_container{
 
 .news-section{
   position: relative;
-  padding: 50px 0px 150px 0px;
+  padding: 10px 0px 75px 0px;
 }
 
 .news-section .sec-title{
@@ -2474,7 +2474,7 @@ div#mCSB_1_container{
 .cta-section{
   position: relative;
   overflow: hidden;
-  padding: 120px 0px;
+  padding: 25px 0px;
 }
 
 .cta-section .content-box{
@@ -3390,7 +3390,7 @@ div#mCSB_1_container{
 
 .banner-section.style-three{
   position: relative;
-  padding: 245px 0px 125px 0px;
+  padding: 200px 0px 25px 0px;
 }
 
 .banner-section.style-three .image-box{
@@ -3807,7 +3807,7 @@ div#mCSB_1_container{
 
 .page-title{
   position: relative;
-  padding: 200px 0px 70px 0px;
+  padding: 150px 0px 70px 0px;
 }
 
 .page-title .pattern-layer{
