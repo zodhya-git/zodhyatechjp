@@ -63,8 +63,25 @@
     </script>
 
     <style>
-        .fa-bolt {
-            color: #F68838;
+        @media (max-width:767px) {
+           .recognizationimg {
+                max-width: 100px;
+                max-height: 100px;
+            }
+        }
+
+        @media (max-width:768px) {
+            .recognizationimg {
+                max-width: 150px;
+                max-height: 150px;
+            }
+        }
+
+        @media (max-width:992px) {
+            .recognizationimg {
+                max-width: 150px;
+                max-height: 150px;
+            }
         }
     </style>
 </head>
@@ -91,7 +108,7 @@
                             <i class="icon-bar"></i>
                             <i class="icon-bar"></i>
                         </div>
-                        <nav style="margin-left:3vw;" class="main-menu navbar-expand-md navbar-light">
+                        <nav style="margin-left:10vw;" class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li class="current"><a href="index.html">Home</a></li>
@@ -302,101 +319,6 @@
     <!-- product-section end -->
 
 
-    <!-- media-section-->
-    <!-- <section class="testimonial-style-two text-center">
-        <div class="pattern-layer" style="background-image: url(assets/images/shape/pattern-17.png);"></div>
-        <div class="auto-container">
-            <div class="upper-box">
-                <div class="sec-title">
-                    <h2>Achievements & Media Updates</h2>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-lg-10 col-md-12 col-sm-12 offset-lg-1 inner-column">
-                    <div class="testimonial-carousel-2 owl-carousel owl-theme owl-nav-none">
-                        <div class="testimonial-content">
-                            <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/achivements/thub01.png" alt="">
-                                </figure>
-                                <p>Got selected from 2000 startups and incubated at T-hub Lab 32</p>
-                                <div class="author-info">
-
-                                    <span class="designation">T-hub</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-content">
-                            <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/achivements/wwf01.png" alt="">
-                                </figure>
-                                <p>Part of their Climate Solver Business. Accelerator'19 in collaboration with
-                                    ISB-Hyderabad.</p>
-                                <div class="author-info">
-                                    <span class="designation">WWF</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-content">
-                            <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/achivements/bwt01.png" alt="">
-                                </figure>
-                                <p>Finalist of the BWT india event in the Proptech sector.</p>
-                                <div class="author-info">
-
-                                    <span class="designation">Bwt india</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-content">
-                            <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/achivements/fiire01.png" alt="">
-                                </figure>
-                                <p>Part of the Goa Tourism Accelerator Program 2021 in collaboration with Goa tourism
-                                    department.</p>
-                                <div class="author-info">
-                                    <span class="designation">FiiRE</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-content">
-                            <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/achivements/carbonexchange01.png"
-                                        alt=""></figure>
-                                <p>A program by EnKing international on carbon offset markets.</p>
-                                <div class="author-info">
-
-                                    <span class="designation">Carbone Xchange</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-content">
-                            <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/achivements/worldurban01.png" alt="">
-                                </figure>
-                                <p>Finalist at WUF11 Katowice Energy innovation Challenge by UN Habitat & Rawalnk.</p>
-                                <div class="author-info">
-                                    <span class="designation">World Urban Forum</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-content">
-                            <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/achivements/flctd01.png" alt="">
-                                </figure>
-                                <p>Part of the 2022 accelerator by FLCTD - by BEE, UNIDO & Sangam Ventures.</p>
-                                <div class="author-info">
-                                    <span class="designation">FLCTD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- media-section end -->
-
-
     <!-- recognization-section -->
     <section class="service-section service-page sec-pad">
         <div class="auto-container">
@@ -406,10 +328,10 @@
                 </div>
             </div>
             <div class="row clearfix">
-                <div class="col-lg-2 col-md-2 col-sm-6 service-block">
+                <div class="col-lg-2 col-md-2 col-sm-2 service-block">
                     <div class="service-block-two wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div class="inner-box">
-                            <figure class="image-box"><img src="assets/images/achivements/thub01.png" alt="">
+                            <figure class="image-box"><img src="assets/images/achivements/thub01.png" alt="" class="recognizationimg">
                             </figure>
                         </div>
                     </div>
@@ -417,7 +339,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-6 service-block">
                     <div class="service-block-two wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div class="inner-box">
-                            <figure class="image-box"><img src="assets/images/achivements/wwf01.png" alt="">
+                            <figure class="image-box"><img src="assets/images/achivements/wwf01.png" alt="" class="recognizationimg">
                             </figure>
                         </div>
                     </div>
@@ -427,7 +349,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-6 service-block">
                     <div class="service-block-two wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <div class="inner-box mb_0">
-                            <figure class="image-box"><img src="assets/images/achivements/worldurban01.png" alt="">
+                            <figure class="image-box"><img src="assets/images/achivements/worldurban01.png" alt="" class="recognizationimg">
                             </figure>
                         </div>
                     </div>
@@ -436,7 +358,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-6 service-block">
                     <div class="service-block-two wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <div class="inner-box mb_0">
-                            <figure class="image-box"><img src="assets/images/achivements/jetro.png" alt="">
+                            <figure class="image-box"><img src="assets/images/achivements/jetro.png" alt="" class="recognizationimg">
                             </figure>
                         </div>
                     </div>
@@ -445,7 +367,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-6 service-block">
                     <div class="service-block-two wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <div class="inner-box mb_0">
-                            <figure class="image-box"><img src="assets/images/achivements/ginsep.png" alt="">
+                            <figure class="image-box"><img src="assets/images/achivements/ginsep.png" alt="" class="recognizationimg">
                             </figure>
                         </div>
                     </div>
@@ -453,7 +375,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-6 service-block">
                     <div class="service-block-two wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <div class="inner-box mb_0">
-                            <figure class="image-box"><img src="assets/images/achivements/flctd01.png" alt="">
+                            <figure class="image-box"><img src="assets/images/achivements/flctd01.png" alt="" class="recognizationimg">
                             </figure>
                         </div>
                     </div>
