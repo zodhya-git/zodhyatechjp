@@ -71,7 +71,7 @@
 
 body {
   font-size: 17px;
-  color: #848484;
+  color: #000000;
   line-height: 32px;
   font-weight: 400;
   background: #ffffff;
@@ -169,7 +169,7 @@ p {
   font-size: 17px;
   line-height: 32px;
   font-family: 'Open Sans', sans-serif;
-  color: #5f5e5e;
+  color: #000000;
   margin: 0px;
   transition: all 500ms ease;
 }
@@ -183,7 +183,7 @@ h6 {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: #0e1221;
+  color: #000000;
   margin: 0px;
   transition: all 500ms ease;
 }
@@ -193,7 +193,7 @@ h3 {
   display: block;
   font-size: 22px;
   line-height: 30px;
-  color: #3b3b3b;
+  color: #000000;
   font-weight: 600;
   margin-bottom: 23px;
   z-index: 1;
@@ -2220,7 +2220,7 @@ div#mCSB_1_container {
   font-size: 17px;
   font-family: 'Montserrat', sans-serif;
   line-height: 26px;
-  color: #848484;
+  color: #000000;
 }
 
 .pricing-block-one .pricing-table .table-header {
@@ -2416,7 +2416,7 @@ div#mCSB_1_container {
 }
 
 .news-block-one .inner-box .lower-content .post-info li a {
-  color: #848484;
+  color: #000000;
 }
 
 /* .news-block-one .inner-box .lower-content .post-info li a:hover {} */
@@ -2424,7 +2424,7 @@ div#mCSB_1_container {
 .news-block-one .inner-box .lower-content .post-info li:before {
   position: absolute;
   content: '';
-  background: #848484;
+  background: #000000;
   width: 1px;
   height: 12px;
   top: 10px;
@@ -2542,7 +2542,7 @@ div#mCSB_1_container {
   display: inline-block;
   font-size: 17px;
   line-height: 26px;
-  color: #848484;
+  color: #000000;
 }
 
 .main-footer .footer-top .links-widget .widget-content ul li a:before {
@@ -2584,7 +2584,7 @@ div#mCSB_1_container {
 }
 
 .main-footer .footer-top .contact-widget .widget-content ul li a {
-  color: #848484;
+  color: #000000;
 }
 
 /* .main-footer .footer-top .contact-widget .widget-content ul li a:hover {} */
@@ -2627,7 +2627,7 @@ div#mCSB_1_container {
 }
 
 .main-footer .footer-bottom .copyright a {
-  color: #848484
+  color: #000000
 }
 
 /* .main-footer .footer-bottom .copyright a:hover {} */
@@ -2641,7 +2641,7 @@ div#mCSB_1_container {
 .main-footer .footer-bottom .footer-nav li:before {
   position: absolute;
   content: '';
-  background: #848484;
+  background: #000000;
   width: 1px;
   height: 14px;
   top: 9px;
@@ -2657,7 +2657,7 @@ div#mCSB_1_container {
 }
 
 .main-footer .footer-bottom .footer-nav li a {
-  color: #848484;
+  color: #000000;
 }
 
 /* .main-footer .footer-bottom .footer-nav li a:hover {} */
@@ -4373,7 +4373,7 @@ div#mCSB_1_container {
   right: 20px;
   font-size: 18px;
   font-weight: 700;
-  color: #848484;
+  color: #000000;
   background: transparent;
   cursor: pointer;
   transition: all 500ms ease;
@@ -4842,7 +4842,7 @@ div#mCSB_1_container {
 }
 
 .contact-section .info-box .contact-info a {
-  color: #848484;
+  color: #000000;
 }
 
 /* .contact-section .info-box .contact-info a:hover {} */
@@ -4865,7 +4865,7 @@ div#mCSB_1_container {
   position: relative;
   display: inline-block;
   font-size: 14px;
-  color: #848484;
+  color: #000000;
   background: #f3f8ff;
   width: 45px;
   height: 45px;
