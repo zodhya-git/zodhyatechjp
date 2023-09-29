@@ -88,7 +88,7 @@
                             <i class="icon-bar"></i>
                             <i class="icon-bar"></i>
                         </div>
-                        <nav style="margin-left:10vw;" class="main-menu navbar-expand-md navbar-light">
+                        <nav style="margin-left:6vw;" class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li><a href="index.html">Home</a></li>
@@ -104,6 +104,17 @@
                                     <li><a href="blog.html">Blogs</a></li>
                                     <li><a style="color:#F68838;" onMouseOver="this.style.color='#1b617d'"
                                             onMouseOut="this.style.color='#F68838'" href="contact.html">Contact us</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" >
+                                            <i class="fa-solid fa-globe"></i> <span id="language">en</span>
+                                        </a>
+                                        <ul>
+                                            <li> <a href="https://zodhyatech.com">English</a></li>
+                                            <li><a href="https://de.zodhyatech.com">German</a></li>
+                                            <!-- <li><a href="saverx.html">Japan</a></li> -->
+                                            <!-- <li><a href="saver.html">UAE</a></li> -->
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
@@ -429,6 +440,60 @@
     <button class="scroll-top scroll-to-target" data-target="html">
         <span class="fa fa-arrow-up"></span>
     </button>
+    <script>
+        document.cookie = "language=en";
+        
+    </script>
+      <script>
+        
+        const getCookie=(cname)=> {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i <ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                   return c.substring(name.length, c.length);
+               }
+            }
+            return "";
+        }
+        
+        
+
+        let language=getCookie("language")
+        if (language) {
+            document.getElementById('language').textContent = language;
+        } else {
+            document.getElementById('language').textContent = en;
+        }
+        
+
+        // const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+        
+        // const germanyTimeZone = 'Europe/Berlin';
+        // const japanTimeZone = 'Asia/Tokyo';
+
+        // // Check if the user's time zone matches Germany or Japan
+        // if (userTimeZone === germanyTimeZone) {
+           
+        //     window.location.href = 'https://example.com/germany-page';
+        // } 
+        // else if (userTimeZone === japanTimeZone) {
+            
+        //     window.location.href = 'https://example.com/japan-page';
+        // } 
+        // else {
+           
+        //     window.location.href = 'https://amamit.in';
+        // }
+
+
+    </script>
 
 
     <!-- jequery plugins -->

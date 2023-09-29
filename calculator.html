@@ -86,7 +86,8 @@
         #txt-custom {
             display: none;
         }
-        #remark{
+
+        #remark {
             display: none;
         }
     </style>
@@ -101,87 +102,102 @@
     <div class="preloader"></div>
     <!-- preloader -->
 
-   <!-- main header -->
-   <header class="main-header">
-    <div class="outer-container">
-        <div class="header-upper clearfix">
-            <div class="outer-box pull-left">
-                <div class="logo-box pull-left">
-                    <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="" style="width: 80%;"></a></figure>
-                </div>
-                <div class="menu-area pull-left">
-                    <!--Mobile Navigation Toggler-->
-                    <div class="mobile-nav-toggler" style="right: 15px;">
-                        <i class="icon-bar"></i>
-                        <i class="icon-bar"></i>
-                        <i class="icon-bar"></i>
+    <!-- main header -->
+    <header class="main-header">
+        <div class="outer-container">
+            <div class="header-upper clearfix">
+                <div class="outer-box pull-left">
+                    <div class="logo-box pull-left">
+                        <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""
+                                    style="width: 80%;"></a></figure>
                     </div>
-                    <nav style="margin-left:10vw;" class="main-menu navbar-expand-md navbar-light">
-                        <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                            <ul class="navigation clearfix">
-                                <li class="current"><a href="index.html">Home</a></li> 
-                                <li><a href="about.html">About Us</a></li> 
-                                <li class="dropdown"><a href="#">Products</a>
-                                    <ul>
-                                        <li><a href="soul.html">Soul</a></li>
-                                        <li><a href="saverx.html">SaverX</a></li>
-                                        <li><a href="saver.html">Saver</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="faqs.html">FAQ</a></li> 
-                                <li><a href="blog.html">Blogs</a></li>       
-                                <li><a style="color:#F68838;" onMouseOver="this.style.color='#1b617d'"
-                                    onMouseOut="this.style.color='#F68838'" href="contact.html">Contact Us</a></li>
-                            </ul>
+                    <div class="menu-area pull-left">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler" style="right: 15px;">
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
                         </div>
+                        <nav style="margin-left:6vw;" class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class="current"><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li class="dropdown"><a href="#">Products</a>
+                                        <ul>
+                                            <li><a href="soul.html">Soul</a></li>
+                                            <li><a href="saverx.html">SaverX</a></li>
+                                            <li><a href="saver.html">Saver</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="faqs.html">FAQ</a></li>
+                                    <li><a href="blog.html">Blogs</a></li>
+                                    <li><a style="color:#F68838;" onMouseOver="this.style.color='#1b617d'"
+                                            onMouseOut="this.style.color='#F68838'" href="contact.html">Contact Us</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">
+                                            <i class="fa-solid fa-globe"></i> <span id="language">en</span>
+                                        </a>
+                                        <ul>
+                                            <li> <a href="https://zodhyatech.com">English</a></li>
+                                            <li><a href="https://de.zodhyatech.com">German</a></li>
+                                            <!-- <li><a href="saverx.html">Japan</a></li> -->
+                                            <!-- <li><a href="saver.html">UAE</a></li> -->
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--sticky Header-->
+        <div class="sticky-header">
+            <div class="container clearfix">
+                <figure class="logo-box"><a href="index.html"><img src="assets/images/logosmall.png" alt=""
+                            style="width: 60%;"></a></figure>
+                <div class="menu-area">
+                    <nav class="main-menu clearfix">
+                        <!--Keep This Empty / Menu will come through Javascript-->
                     </nav>
                 </div>
             </div>
-          
         </div>
-    </div>
+    </header>
+    <!-- main-header end -->
 
-    <!--sticky Header-->
-    <div class="sticky-header">
-        <div class="container clearfix">
-            <figure class="logo-box"><a href="index.html"><img src="assets/images/logosmall.png" alt=""   style="width: 60%;"></a></figure>
-            <div class="menu-area">
-                <nav class="main-menu clearfix">
-                    <!--Keep This Empty / Menu will come through Javascript-->
-                </nav>
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="index.html"><img src="assets/images/logo_black.png" alt="" title=""></a>
             </div>
-        </div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            </div>
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>T-hub Foundation, Knowledge City, Sy No 83/1, Raidurg, Hyderabad - 500081, India</li>
+                    <li><a href="mailto:contact@zodhyatech.com">contact@zodhyatech.com</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="https://twitter.com/ZodhyaOfficial"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="https://www.facebook.com/zodhya/"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="https://www.linkedin.com/company/zodhya"><span class="fab fa-linkedin-in"></span></a>
+                </ul>
+            </div>
+        </nav>
     </div>
-</header>
-<!-- main-header end -->
-
-
-<!-- Mobile Menu  -->
-<div class="mobile-menu">
-    <div class="menu-backdrop"></div>
-    <div class="close-btn"><i class="fas fa-times"></i></div>
-
-    <nav class="menu-box">
-        <div class="nav-logo"><a href="index.html"><img src="assets/images/logo_black.png" alt="" title=""></a></div>
-        <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-        </div>
-        <div class="contact-info">
-            <h4>Contact Info</h4>
-            <ul>
-                <li>T-hub Foundation, Knowledge City, Sy No 83/1, Raidurg, Hyderabad - 500081, India</li>
-                <li><a href="mailto:contact@zodhyatech.com">contact@zodhyatech.com</a></li>
-            </ul>
-        </div>
-        <div class="social-links">
-            <ul class="clearfix">
-                <li><a href="https://twitter.com/ZodhyaOfficial"><span class="fab fa-twitter"></span></a></li>
-                <li><a href="https://www.facebook.com/zodhya/"><span class="fab fa-facebook-square"></span></a></li>
-                <li><a href="https://www.linkedin.com/company/zodhya"><span class="fab fa-linkedin-in"></span></a>
-            </ul>
-        </div>
-    </nav>
-</div>
-<!-- End Mobile Menu -->
+    <!-- End Mobile Menu -->
 
 
     <!--Page Title-->
@@ -225,29 +241,35 @@
                                 </select> -->
                                 <div>
                                     <label for="AHU"><small>AHU</small></label>
-                                    <input type="checkbox" name="AHU" value="1" id="AHU" onchange="openInputRemark(this)" />
+                                    <input type="checkbox" name="AHU" value="1" id="AHU"
+                                        onchange="openInputRemark(this)" />
 
                                     <label for="Cassette"><small>&nbsp; Cassette/Split </small></label>
-                                    <input type="checkbox" name="Cassette" value="1" id="Cassette" onchange="openInputRemark(this)"/>
+                                    <input type="checkbox" name="Cassette" value="1" id="Cassette"
+                                        onchange="openInputRemark(this)" />
 
                                     <label for="Chiller"><small> &nbsp; Chiller</small></label>
-                                    <input type="checkbox" name="Chiller" value="1" id="Chiller" onchange="openInputRemark(this)"/>
+                                    <input type="checkbox" name="Chiller" value="1" id="Chiller"
+                                        onchange="openInputRemark(this)" />
 
                                     <label for="Ductable"> <small> &nbsp; Ductable </small></label>
-                                    <input type="checkbox" name="Ductable" value="1" id="Ductable" onchange="openInputRemark(this)"/>
+                                    <input type="checkbox" name="Ductable" value="1" id="Ductable"
+                                        onchange="openInputRemark(this)" />
 
                                     <label for="VRF"> <small> &nbsp;VRF </small></label>
-                                    <input type="checkbox" name="VRF" value="1" id="VRF" onchange="openInputRemark(this)"/>
+                                    <input type="checkbox" name="VRF" value="1" id="VRF"
+                                        onchange="openInputRemark(this)" />
 
                                     <label for="custom"> <small>&nbsp; Other </small></label>
                                     <input type="checkbox" id="custom" onchange="openInput(this)">
-                                    
+
                                     <input type="text" class="form-control" id="remark" name="remark"
-                                        placeholder="No of HVAC (Ex. 2 AHU, 1 Chiller etc.) Or any other remarks." style="margin-bottom: 5px;" />
-                                    
+                                        placeholder="No of HVAC (Ex. 2 AHU, 1 Chiller etc.) Or any other remarks."
+                                        style="margin-bottom: 5px;" />
+
                                     <input type="text" class="form-control" id="txt-custom" name="customtype"
                                         placeholder="Enter Type of the HVAC" />
-                                    
+
                                 </div>
                             </div>
                             <div class="form-group">
@@ -406,7 +428,8 @@
                     <div style="color: white;" class="contact-info">
                         <h3 style="color: white;">Address</h3>
 
-                        <p style="color: white;">T-hub Foundation, Knowledge City, Sy No 83/1, Raidurg, Hyderabad - 500081, India</p>
+                        <p style="color: white;">T-hub Foundation, Knowledge City, Sy No 83/1, Raidurg, Hyderabad -
+                            500081, India</p>
 
                     </div>
 
@@ -459,7 +482,8 @@
                                 </div>
                                 <div class="widget-content">
                                     <ul>
-                                        <li>T-hub Foundation, Knowledge City, Sy No 83/1, Raidurg, Hyderabad - 500081, India</li>
+                                        <li>T-hub Foundation, Knowledge City, Sy No 83/1, Raidurg, Hyderabad - 500081,
+                                            India</li>
                                         <li><a href="mailto:contact@zodhyatech.com"
                                                 style="color: #f0842c ;">contact@zodhyatech.com</a></li>
                                     </ul>
@@ -499,6 +523,60 @@
         <span class="fa fa-arrow-up"></span>
     </button>
 
+    <script>
+        document.cookie = "language=en";
+        
+    </script>
+      <script>
+        
+        const getCookie=(cname)=> {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i <ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                   return c.substring(name.length, c.length);
+               }
+            }
+            return "";
+        }
+        
+        
+
+        let language=getCookie("language")
+        if (language) {
+            document.getElementById('language').textContent = language;
+        } else {
+            document.getElementById('language').textContent = en;
+        }
+        
+
+        // const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+        
+        // const germanyTimeZone = 'Europe/Berlin';
+        // const japanTimeZone = 'Asia/Tokyo';
+
+        // // Check if the user's time zone matches Germany or Japan
+        // if (userTimeZone === germanyTimeZone) {
+           
+        //     window.location.href = 'https://example.com/germany-page';
+        // } 
+        // else if (userTimeZone === japanTimeZone) {
+            
+        //     window.location.href = 'https://example.com/japan-page';
+        // } 
+        // else {
+           
+        //     window.location.href = 'https://amamit.in';
+        // }
+
+
+    </script>
 
     <!-- jequery plugins -->
     <script src="assets/js/jquery.js"></script>
