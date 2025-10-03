@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,200;1,400&family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;400;500&family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap');
 
 /* Css For Detox */
 
@@ -182,7 +181,7 @@ h4,
 h5,
 h6 {
   position: relative;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #000000;
   margin: 0px;
@@ -276,7 +275,7 @@ img {
   font-size: 17px;
   line-height: 30px;
   font-weight: 500;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #fff !important;
   padding: 15px 58px;
   text-align: center;
@@ -446,7 +445,7 @@ img {
   position: relative;
   font-size: 18px;
   line-height: 30px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 14px;
@@ -495,6 +494,9 @@ img {
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
+  /* align-items: center; */
+  text-align: center;
+
 }
 
 .sticky-header {
@@ -541,19 +543,18 @@ img {
 }
 
 .main-header .outer-container {
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position: relative;
   width: 100%;
   background: transparent;
-  padding: 0px 100px;
-  margin-left: auto;
-  margin-right: auto;
+  /* padding: 0px 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-header .outer-container .logo-box {
-  padding: 61px 0px 30px 0px;
-  margin-right: 125px;
+  padding: 50px 0px 30px 0px;
+  /* margin-right: 125px; */
 }
 
 .main-header .outer-container .menu-right-content .phone,
@@ -564,7 +565,7 @@ img {
 
 .main-header .outer-container .menu-right-content .phone {
   font-size: 18px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 30px;
   font-weight: 600;
   color: #3b3b3b;
@@ -591,7 +592,7 @@ img {
   display: inline-block;
   overflow: hidden;
   font-size: 18px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 30px;
   font-weight: 600;
   color: #3b3b3b;
@@ -700,7 +701,7 @@ img {
   line-height: 30px;
   font-weight: 600;
   opacity: 1;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #3b3b3b;
   padding: 0px;
   z-index: 1;
@@ -1306,7 +1307,7 @@ div#mCSB_1_container {
 .banner-section {
   position: relative;
   background: #fff;
-  padding: 210px 0px 100px 0px;
+  padding: 25px 0px 25px 0px;
 }
 
 .banner-section .content-box .btn-box .video-btn {
@@ -1315,10 +1316,10 @@ div#mCSB_1_container {
   overflow: hidden;
   font-size: 17px;
   line-height: 30px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #3b3b3b;
-  padding: 15px 0px 15px 75px;
+  padding: 15px 0px 15px 0px;
   z-index: 1;
 }
 
@@ -1508,7 +1509,7 @@ div#mCSB_1_container {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 20px 50px 5px #e9eef7;
-  padding: 70px 50px 50px 50px;
+  padding: 50px 20px 20px 20px;
   transition: all 500ms ease;
 }
 
@@ -1755,7 +1756,7 @@ div#mCSB_1_container {
   top: 12px;
   font-size: 30px;
   font-weight: 500;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: #fff;
   width: 66px;
   height: 66px;
@@ -2178,7 +2179,7 @@ div#mCSB_1_container {
   border-radius: 30px;
   font-size: 17px;
   line-height: 26px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #3b3b3b;
   cursor: pointer;
@@ -2221,7 +2222,7 @@ div#mCSB_1_container {
   position: relative;
   display: inline-block;
   font-size: 17px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 26px;
   color: #000000;
 }
@@ -3035,6 +3036,7 @@ div#mCSB_1_container {
   font-weight: 600;
   transition: all 500ms ease;
 }
+
 /* 
 .service-style-two .tab-btns li:hover .btn-inner h4,
 .service-style-two .tab-btns li.active-btn .btn-inner h4 {} */
@@ -3156,7 +3158,7 @@ div#mCSB_1_container {
   left: 0px;
   top: 0px;
   font-size: 24px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #fff;
   width: 50px;
@@ -3193,7 +3195,7 @@ div#mCSB_1_container {
   display: block;
   font-size: 50px;
   line-height: 50px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #fff;
   margin-bottom: 13px;
@@ -3203,7 +3205,7 @@ div#mCSB_1_container {
   position: relative;
   font-size: 17px;
   line-height: 26px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -3360,7 +3362,7 @@ div#mCSB_1_container {
 
 .banner-section.style-three {
   position: relative;
-  padding: 200px 0px 25px 0px;
+  padding: 25px 0px 25px 0px;
 }
 
 .banner-section.style-three .image-box {
@@ -3777,7 +3779,7 @@ div#mCSB_1_container {
 
 .page-title {
   position: relative;
-  padding: 150px 0px 70px 0px;
+  padding: 70px 0px 70px 0px;
 }
 
 .page-title .pattern-layer {
@@ -3804,7 +3806,7 @@ div#mCSB_1_container {
   display: inline-block;
   font-size: 15px;
   line-height: 26px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-right: 15px;
   margin-right: 5px;
 }
@@ -4198,7 +4200,7 @@ div#mCSB_1_container {
   display: inline-block;
   font-size: 16px;
   line-height: 26px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #3b3b3b;
   text-transform: uppercase;
@@ -4206,6 +4208,7 @@ div#mCSB_1_container {
   cursor: pointer;
   transition: all 500ms ease;
 }
+
 /* 
 .portfolio-page-section .filter-tabs li:hover,
 .portfolio-page-section .filter-tabs li.active {} */
@@ -4455,7 +4458,7 @@ div#mCSB_1_container {
   display: block;
   font-size: 16px;
   line-height: 26px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #252930;
   padding: 5px 0px;
 }
@@ -4557,7 +4560,7 @@ div#mCSB_1_container {
   display: inline-block;
   font-size: 15px;
   line-height: 26px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #25283a;
   border: 1px solid #e5e5e5;
   border-radius: 10px;
@@ -4644,7 +4647,7 @@ div#mCSB_1_container {
 
 .blog-details .blog-details-content .news-block-one .inner-box .lower-content .post-share-option ul li {
   font-size: 17px;
-  font-family:  'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #898c8f;
 }
 
@@ -4717,6 +4720,7 @@ div#mCSB_1_container {
   resize: none;
   display: block;
 }
+
 /* 
 .blog-details .blog-details-content .comments-form-area .comment-form .form-group input:focus,
 .blog-details .blog-details-content .comments-form-area .comment-form .form-group textarea:focus {} */
@@ -4923,6 +4927,7 @@ div#mCSB_1_container {
   height: 170px;
   resize: none;
 }
+
 /* 
 .contact-section .form-inner #contact-form .form-group input:focus,
 .contact-section .form-inner #contact-form .form-group textarea:focus {} */

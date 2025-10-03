@@ -91,7 +91,7 @@
                 <i class="icon-bar"></i>
               </div>
               <nav
-                style="margin-left: 11vw"
+                style="margin-left: 9vw"
                 class="main-menu navbar-expand-md navbar-light"
               >
                 <div
@@ -146,7 +146,7 @@
 
       <!--sticky Header-->
       <div class="sticky-header">
-        <div class="container clearfix">
+        <div class="auto-container clearfix">
           <figure class="logo-box">
             <a href="index.html"
               ><img src="assets/images/logosmall.png" alt="" style="width: 60%"
@@ -212,7 +212,7 @@
     <!-- End Mobile Menu -->
 
     <!--Page Title-->
-    <section class="page-title bg-color-1 text-center">
+    <section class="page-title text-center">
       <div
         class="pattern-layer"
         style="background-image: url(assets/images/shape/pattern-18.png)"
@@ -414,8 +414,9 @@
             </p>
           </div>
           <ul class="footer-nav pull-right">
-            <li><a href="privacy.html">利用規約</a></li>
-            <li><a href="privacy.html">プライバシーポリシー</a></li>
+            <li><a href="https://zodhyatech.com/tnc.html">利用規約</a></li>
+            <li><a href="https://zodhyatech.com/privacy.html">プライバシーポリシー</a></li>
+            <li><a href="https://zodhyatech.com/gdpr.html">GDPR準拠</a></li>
           </ul>
         </div>
       </div>
@@ -426,51 +427,43 @@
     <button class="scroll-top scroll-to-target" data-target="html">
       <span class="fa fa-arrow-up"></span>
     </button>
-    <script>
-      document.cookie = "language=jp";
+     <script>
+        document.cookie = "language=jp";
+        
     </script>
+    
     <script>
-      const getCookie = (cname) => {
-        let name = cname + "=";
-        let decodedCookie = decodeURIComponent(document.cookie);
-        let ca = decodedCookie.split(";");
-        for (let i = 0; i < ca.length; i++) {
-          let c = ca[i];
-          while (c.charAt(0) == " ") {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
+        const getCookie=(cname)=> {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i <ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                   return c.substring(name.length, c.length);
+               }
+            }
+            return "";
         }
-        return "";
-      };
+        
+        const setCookie=(cname, cvalue, exdays)=> {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+        
+        
 
-      let language = getCookie("language");
-      if (language) {
-        document.getElementById("language").textContent = language;
-      } else {
-        document.getElementById("language").textContent = en;
-      }
-
-      // const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-      // const germanyTimeZone = 'Europe/Berlin';
-      // const japanTimeZone = 'Asia/Tokyo';
-
-      // // Check if the user's time zone matches Germany or Japan
-      // if (userTimeZone === germanyTimeZone) {
-
-      //     window.location.href = 'https://example.com/germany-page';
-      // }
-      // else if (userTimeZone === japanTimeZone) {
-
-      //     window.location.href = 'https://example.com/japan-page';
-      // }
-      // else {
-
-      //     window.location.href = 'https://amamit.in';
-      // }
+        let language=getCookie("language")
+        if (language) {
+            document.getElementById('language').textContent = language;
+        } else {
+            document.getElementById('language').textContent = "en";
+        }
     </script>
 
     <!-- jequery plugins -->
